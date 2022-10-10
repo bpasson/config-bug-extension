@@ -4,8 +4,8 @@ import io.quarkus.runtime.annotations.*;
 
 import java.util.Map;
 
-@ConfigRoot(name="bug", phase = ConfigPhase.BUILD_TIME) // gives correct default value
-//@ConfigRoot(name="bug", phase = ConfigPhase.BUILD_AND_RUN_TIME_FIXED) // gives wrong default value
+//@ConfigRoot(name="bug", phase = ConfigPhase.BUILD_TIME) // gives correct default value
+@ConfigRoot(name="bug", phase = ConfigPhase.BUILD_AND_RUN_TIME_FIXED) // gives wrong default value
 public class BuildConfigs {
 
     /**
